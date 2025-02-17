@@ -22,8 +22,10 @@
 
 <body class="page">
   <header class="header content-block">
-    <h1 class="header__page-title">&lt;/HTML&gt;</h1>
-    <h2 class="header__page-subtitle">закрывающий тег</h2>
+    <hgroup class="header__headings-group">
+      <h1 class="header__page-title">&lt;/HTML&gt;</h1>
+      <p class="header__page-subtitle">закрывающий тег</p>
+    </hgroup>
     <nav class="theme-menu header__theme-menu">
       <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
       <ul class="theme-menu__list">
@@ -48,7 +50,7 @@
 
   <main class="main-content content-block">
     <section class="card main-content__card">
-      <h3 class="card__heading">Фритрек и нулевой спринт: Подготовка к работе</h3>
+      <h2 class="card__heading">Фритрек и нулевой спринт: Подготовка к работе</h2>
       <picture>
         <source media="(max-width: 375px)" srcset="./images/image-1-small.png">
         <img class="card__image" src="./images/image-1-big.png" alt="Иллюстрация автобуса." loading="lazy" />
@@ -61,9 +63,9 @@
           <p class="card__paragraph">Место для ваших воспоминаний о начале обучения.</p>
         </div>
         <div class="card__buttons-container">
-          <button class="card__icon-button button">
-            <svg class="card__like-icon like-icon" width="38" height="36" viewBox="0 0 38 36" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
+          <button type="button" class="card__icon-button button">
+            <svg aria-hidden="true" class="card__like-icon like-icon" width="38" height="36" viewBox="0 0 38 36"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
               <g class="heart">
                 <path class="contour"
                   d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
@@ -80,13 +82,13 @@
                 fill="var(--heart-color)" />
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button type="button" class="card__like-button content-button button">
             <span class="button__text">Like</span>
           </button>
         </div>
       </div>
     </section>
-    <button class="save-button button">
+    <button type="submit" class="save-button content-button button">
       <svg class="save-button__icon">
         <use href="./svg/floppy.svg#floppy"></use>
       </svg>
