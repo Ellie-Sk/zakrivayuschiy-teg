@@ -4,3 +4,81 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+.page.theme-light {
+  --font-weight-heading: 700;
+  --font-weight-text: 400;
+
+  --text-color: #000000;
+  --text-stroke-color: #ffffff;
+  --text-button-color: #ffffff;
+  --background-color: #ffffff;
+
+  --background-gradient: repeating-linear-gradient(
+      90deg,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+
+  --heart-contour: #000000;
+}
+
+.page.theme-dark {
+  --font-weight-heading: 785;
+  --font-weight-text: 465;
+
+  --text-color: #00cc14;
+  --text-stroke-color: #000000;
+  --text-button-color: #00cc14;
+  --background-color: #000000;
+
+  --background-gradient: repeating-linear-gradient(
+      90deg,
+      #000,
+      #000 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(#000, #000 2px, transparent 2px, transparent 4px),
+    linear-gradient(#007f0c, #004306);
+
+  --heart-contour: #00cc14;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --font-weight-heading: 785;
+    --font-weight-text: 465;
+
+    --text-color: #00cc14;
+    --text-stroke-color: #000000;
+    --text-button-color: #000000;
+    --background-color: #000000;
+
+    --background-gradient: repeating-linear-gradient(
+        90deg,
+        #000,
+        #000 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      repeating-linear-gradient(
+        #000,
+        #000 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      linear-gradient(#007f0c, #004306);
+
+    --heart-contour: #00cc14;
+  }
+}
